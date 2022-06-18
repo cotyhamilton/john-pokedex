@@ -18,7 +18,7 @@
 		<th>National Dex</th>
 		<th>Name</th>
 		<th>Type</th>
-		<!-- <th>Location</th> -->
+		<th>Location</th>
 		<th>Evolution</th>
 		<!-- <th>Items Dropped</th> -->
 	</thead>
@@ -37,7 +37,7 @@
 				<td>{p.NationalDex}</td>
 				<td>{p.Pokemon}</td>
 				<td>{p.Type}</td>
-				<!-- <td>{p.Location}</td> -->
+				<td>{p.Location}</td>
 				<td>{p.Evolution}</td>
 				<!-- <td>{p['Items Dropped']}</td> -->
 			</tr>
