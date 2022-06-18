@@ -28,7 +28,9 @@
 				<td><input type="checkbox" bind:checked={$hisuiDexStore[p.HisuiDex]} /></td>
 				<td
 					><img
-						src={`https://raw.githubusercontent.com/cotyhamilton/pokemon/master/img/detail/${p.NationalDex}.png`}
+						src={`https://raw.githubusercontent.com/cotyhamilton/pokemon/main/img/detail/${
+							p.NationalDex
+						}${p.SubFormId ? "_" + p.SubFormId : ""}.png`}
 						alt={p.Pokemon}
 						width="100"
 					/></td

@@ -1502,7 +1502,7 @@
 		"HisuiDex": "168",
 		"NationalDex": "37",
 		"Pokemon": "Vulpix",
-		"Type": "Fire, Ice",
+		"Type": "Fire",
 		"Location": "Cobalt Coastlands- Veilstone Cape",
 		"Evolution": "-",
 		"Items Dropped": "Spoiled ApricornRawst Berry"
@@ -1510,8 +1510,9 @@
 	{
 		"HisuiDex": "168.1",
 		"NationalDex": "37",
+		"SubFormId": "f2",
 		"Pokemon": "Alolan Vulpix",
-		"Type": "??",
+		"Type": "Ice",
 		"Location": "Received as a reward for completing the Snow-White Vulpix in the Snow Request.",
 		"Evolution": "-",
 		"Items Dropped": "Spoiled ApricornAspear Berry"
@@ -1520,7 +1521,7 @@
 		"HisuiDex": "169",
 		"NationalDex": "38",
 		"Pokemon": "Ninetales",
-		"Type": "Fire, Ice",
+		"Type": "Fire",
 		"Location": "Cobalt Coastlands- Firespit Island",
 		"Evolution": "Use a Fire Stone on Vulpix",
 		"Items Dropped": "Seed of MasteryExp. Candy M"
@@ -1528,8 +1529,9 @@
 	{
 		"HisuiDex": "169.1",
 		"NationalDex": "38",
+		"SubFormId": "f2",
 		"Pokemon": "Alolan Ninetales",
-		"Type": "??",
+		"Type": "Ice",
 		"Location": "Evolution only - Evolve by using Ice Stone on Alolan Vulpix.",
 		"Evolution": "Use an Ice Stone on Alolan Vulpix"
 	},
@@ -1825,7 +1827,7 @@
 		"HisuiDex": "202",
 		"NationalDex": "215",
 		"Pokemon": "Sneasel",
-		"Type": "Fighting/Poison, Dark/Ice",
+		"Type": "Dark/Ice",
 		"Location": "Obsidian Fieldlands-Space-Time Distortions",
 		"Evolution": "-",
 		"Items Dropped": "Pep-Up PlantRazor Claw"
@@ -1833,8 +1835,9 @@
 	{
 		"HisuiDex": "202.1",
 		"NationalDex": "215",
+		"SubFormId": "f2",
 		"Pokemon": "Hisuian Sneasel",
-		"Type": "??",
+		"Type": "Fighting/Poison",
 		"Location": "Coronet Highlands- Celestica Trail, Primeval GrottoAlabaster Icelands- Avalugg's Legacy, Glacier Terrace",
 		"Evolution": "-",
 		"Items Dropped": "Pep-Up PlantRazor Claw"
@@ -2139,8 +2142,9 @@
 	{
 		"HisuiDex": "235.1",
 		"NationalDex": "483",
+		"SubFormId": "f2",
 		"Pokemon": "Dialga (Origin Forme)",
-		"Type": "??",
+		"Type": "Steel/Dragon",
 		"Location": "Coronet Highlands- Temple of Sinnoh as part of the main story.",
 		"Evolution": "-"
 	},
@@ -2156,8 +2160,9 @@
 	{
 		"HisuiDex": "236.1",
 		"NationalDex": "484",
+		"SubFormId": "f2",
 		"Pokemon": "Palkia (Origin Forme)",
-		"Type": "??",
+		"Type": "Water/Dragon",
 		"Location": "Coronet Highlands- Temple of Sinnoh as part of the main story.",
 		"Evolution": "-"
 	},
