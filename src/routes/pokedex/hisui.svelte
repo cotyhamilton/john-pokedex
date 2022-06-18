@@ -1,19 +1,14 @@
 <script lang="ts">
-	import { browser } from "$app/env";
-	import type { Pokemon } from "../../types/pokemon";
+	import type { Pokemon } from "$lib/types/pokemon";
+	import { hisuiDexStore, hisuiCountStore } from "$lib/stores/hisui";
+	import Floating from "$lib/components/Floating.svelte";
 
 	export let pokemon: Pokemon[] = [];
-
-	function register(e: MouseEvent) {
-		const target = e.target as HTMLInputElement;
-		const id = "hisui-" + target.getAttribute("data-hisui-id");
-		if (localStorage.getItem(id)) {
-			localStorage.removeItem(id);
-		} else {
-			localStorage.setItem(id, "true");
-		}
-	}
 </script>
+
+<Floating>
+	<p>{`${$hisuiCountStore} / ${pokemon.length}`}</p>
+</Floating>
 
 <table>
 	<thead>
@@ -30,14 +25,7 @@
 	<tbody>
 		{#each pokemon as p}
 			<tr>
-				<td
-					><input
-						data-hisui-id={p.HisuiDex}
-						type="checkbox"
-						on:click={register}
-						checked={browser && !!localStorage.getItem("hisui-" + p.HisuiDex)}
-					/></td
-				>
+				<td><input type="checkbox" bind:checked={$hisuiDexStore[p.HisuiDex]} /></td>
 				<td
 					><img
 						src={`https://raw.githubusercontent.com/cotyhamilton/pokemon/master/img/detail/${p.NationalDex}.png`}
