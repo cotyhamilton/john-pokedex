@@ -11,15 +11,12 @@ export const hisuiDexStore = writable(stored ? JSON.parse(stored) : {});
 browser && hisuiDexStore.subscribe((value) => localStorage.setItem("hisui", JSON.stringify(value)));
 
 // derive count on dex update
-export const hisuiCountStore = derived(
-    hisuiDexStore,
-    $dex => {
-        let count = 0;
-        for (const pokemon in $dex) {
-            if ($dex[pokemon]) {
-                count++
-            }
-        }
-        return count;
-    }
-);
+export const hisuiCountStore = derived(hisuiDexStore, ($dex) => {
+	let count = 0;
+	for (const pokemon in $dex) {
+		if ($dex[pokemon]) {
+			count++;
+		}
+	}
+	return count;
+});
